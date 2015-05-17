@@ -1,0 +1,161 @@
+//fonts
+$monospace: 'Cutive Mono', monospace;
+$bebas: "bebas-neue", Impact, Arial, Helvetica, sans-serif;
+
+//colors
+$yellow: #f0f04e;
+$black: #323232;
+$white: #fff;
+$grey:#f4f4f4;
+
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	border: 11px solid $yellow;
+	font: 16px/20px $monospace normal;
+	color: $black;
+	background-color: $grey;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $bebas;
+	letter-spacing: 3px;
+	font-style: normal;
+	font-weight: 400;
+}
+
+//structure
+.container, .row {
+	min-height: 100%;
+}
+
+.row {
+	max-width: 100%;
+}
+
+.large-4, .large-8 {
+	padding: 5%;
+}
+
+//nav and social
+
+.menu-container {
+	width: 0;
+	height: 0;
+	border-top: 120px solid $yellow;
+	border-right: 120px solid transparent;
+}
+
+.menu-text {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+	color: $black;
+}
+
+.left-off-canvas-menu {
+	background-color: $yellow;
+	color: $black;
+}
+
+.logo-container {
+	text-align: left;
+	padding-left: 110px;
+}
+
+.logo-container h1 {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
+
+.logo {
+	max-width: 120px;
+}
+
+.designer {
+	font-size: 1rem;
+	letter-spacing: 3px;
+	margin-top: -5px;
+}
+
+.zigzag {
+	background: url('../img/zigzag300px.png') no-repeat;
+	background-size: 40px;
+	display: block;
+}
+
+.zigzag:hover {
+	background: url('../img/zigzag300px.gif') no-repeat;
+	background-size: 40px;
+}
+
+.social {
+	font-size: .9rem;
+	list-style: none;	
+	padding-left: 0px;
+	margin-left: 0px;
+	margin-top: 40px;
+}
+
+.social li {
+	display: inline-block;
+}
+
+.social li a {
+	background-color: transparent;
+	padding: 10px;
+	text-align: center;
+	color: $black;
+	transition: .2s all;
+	-webkit-transition: .2s all;
+	border: 2px solid $black;
+	padding-bottom: 5px;
+}
+
+.social li a:hover {
+	background-color: $black;
+	color: $white;
+	border-radius: 100%;
+	text-decoration: none;
+}
+
+// about modal
+
+.about-modal {
+	display: block;
+	margin-top: 50px;
+}
+
+//project grid home page
+
+.project-container {
+	min-height: 100%;
+}
+
+//.project-item {
+//	height: 250px;
+//	width: 33.33333%;
+//}
+
+.project-item {
+	padding: 10px;
+	margin: 15px;
+}
+
+.project-item img {
+	width: 100%;
+	height: 100%;
+	background-color:#fff;
+	padding: 10px;
+	padding-bottom: 60px;
+}
