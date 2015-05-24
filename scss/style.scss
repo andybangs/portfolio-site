@@ -19,19 +19,24 @@ body {
 	font: 16px/20px $monospace normal;
 	color: $black;
 	background-color: $grey;
-}
-
-body, .off-canvas-wrap, .inner-wrap {
 	min-height: 100%;
 }
 
-.off-canvas-wrap {
-	position: relative;
-}
 
-.inner-wrap {
-	position: absolute;
-}
+// !!! 3 feature grid !!!
+		//body, .off-canvas-wrap, .inner-wrap {
+		//	min-height: 100%;
+		//}
+		//
+		//.off-canvas-wrap {
+		//	position: relative;
+		//}
+		//
+		//.inner-wrap {
+		//	position: absolute;
+		//}
+// !!! end 3 feature grid !!!
+
 
 img {
 	max-width: 100%;
@@ -113,7 +118,6 @@ h1, h2, h3, h4, h5, h6 {
 	padding-left: 110px;
 	display: inline-block;
 	float: left;
-	width: 40%;
 }
 
 .logo-container h1 {
@@ -182,68 +186,73 @@ h1, h2, h3, h4, h5, h6 {
 
 //project grid home page
 
-.project-container {
-	height: 100%;
-	display: inline-block;
-	float: left;
-	width: 60%;
-	position: absolute;
-  top: 0;
+
+// !!! 3 feature grid !!!
+
+		//.project-container {
+		//	height: 100%;
+		//	display: inline-block;
+		//	float: left;
+		//	width: 60%;
+		//	position: absolute;
+		//  top: 0;
+		//}
+		//
+		//.project-container .row {
+		//	min-height: 50%;
+		//}
+		//
+		//.project-container .row .columns {
+		//	height: 50%;
+		//  position: absolute;
+		//	padding: 20px;
+		//	color: $grey;
+		//}
+		//
+		//.project-container .row .columns h3 {
+		//	font-size: 1.2em;
+		//	color: $grey;
+		//	padding-bottom: 5px;
+		//	border-bottom: 1px solid $grey;
+		//	max-width: 200px;
+		//}
+		//
+		//.feature-1 {
+		//	border-bottom: 5px solid $grey;
+		//	background: url(../img/ian/feature1-3.jpg) no-repeat center;
+		//	background-size: cover;
+		//}
+		//
+		//.feature-2 {
+		//	background: url(../img/mid/feature2_bw.jpg) no-repeat center;
+		//	background-size: cover;
+		//	left: 0;
+		//	border-right: 5px solid $grey;
+		//	border-top: 5px solid $grey;
+		//}
+		//
+		//.feature-3 {
+		//	background: url(../img/pos/feature3.jpg) no-repeat center;
+		//	background-size: cover;
+		//	right: 0;
+		//	border-left: 5px solid $grey;
+		//	border-top: 5px solid $grey;
+		//}
+
+// !!! end 3 feature grid !!!
+
+.project-item {
+	padding: 10px;
+	margin: 15px;
 }
 
-.project-container .row {
-	min-height: 50%;
+.project-item img, .medium-block-grid-3 li img {
+	width: 100%;
+	min-height: 100%;
+	background-color:#fff;
+	padding: 10px;
+	padding-bottom: 60px;
 }
-
-.project-container .row .columns {
-	height: 50%;
-  position: absolute;
-	padding: 20px;
-	color: $grey;
-}
-
-.project-container .row .columns h3 {
-	font-size: 1.2em;
-	color: $grey;
-	padding-bottom: 5px;
-	border-bottom: 1px solid $grey;
-	max-width: 200px;
-}
-
-.feature-1 {
-	border-bottom: 5px solid $grey;
-	background: url(../img/ian/feature1-3.jpg) no-repeat center;
-	background-size: cover;
-}
-
-.feature-2 {
-	background: url(../img/mid/feature2_bw.jpg) no-repeat center;
-	background-size: cover;
-	left: 0;
-	border-right: 5px solid $grey;
-	border-top: 5px solid $grey;
-}
-
-.feature-3 {
-	background: url(../img/pos/feature3.jpg) no-repeat center;
-	background-size: cover;
-	right: 0;
-	border-left: 5px solid $grey;
-	border-top: 5px solid $grey;
-}
-
-//.project-item {
-//	padding: 10px;
-//	margin: 15px;
-//}
-//
-//.project-item img {
-//	width: 100%;
-//	height: 100%;
-//	background-color:#fff;
-//	padding: 10px;
-//	padding-bottom: 60px;
-//}
 
 
 
