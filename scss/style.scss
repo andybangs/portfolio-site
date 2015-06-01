@@ -1,10 +1,11 @@
 //fonts
-$monospace: 'Cutive Mono', monospace;
+$monospace: 'Cutive Mono', Courier, Courier New, monospace;
 $bebas: "bebas-neue", Impact, Arial, Helvetica, sans-serif;
+$webdings: 'Webdings';
 
 //colors
 $yellow: #f0f04e;
-$black: #323232;
+$black: #222;
 $white: #fff;
 $grey:#f4f4f4;
 
@@ -50,6 +51,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 //structure
+
+//.off-canvas-wrap {
+//	 border: 1px solid black;
+//}
+
 .container, .row {
 	min-height: 100%;
 }
@@ -98,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	padding: 8px 20px;
 	font-family: $bebas;
-	font-size: 1.4em;
+	font-size: 1.4rem;
 	letter-spacing: 3px;
 	color: $black;
 	box-shadow: inset 0 0 0 0 $black;
@@ -118,6 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-left: 110px;
 	display: inline-block;
 	float: left;
+	width: 40%;
 }
 
 .logo-container h1 {
@@ -241,19 +248,104 @@ h1, h2, h3, h4, h5, h6 {
 
 // !!! end 3 feature grid !!!
 
+
+//.project-container {
+//	height: 100%;
+//	display: inline-block;
+////	float: left;
+////	width: 60%;
+//	position: absolute;
+//	top: 0;
+//}
+
+.project-container {
+	display: inline-block;
+	width: 60%;
+	padding-right: 110px;
+	min-height: 100%;
+}
+
 .project-item {
 	padding: 10px;
 	margin: 15px;
 }
 
-.project-item img, .medium-block-grid-3 li img {
-	width: 100%;
+//.project-item img, .project-row li img {
+//	width: 100%;
+//	min-height: 100%;
+//	background-color:$white;
+//	padding: 10px;
+//	padding-bottom: 60px;
+//	border: 1px solid $black;
+//}
+
+.project-row li, .project-row li img {
 	min-height: 100%;
-	background-color:#fff;
-	padding: 10px;
-	padding-bottom: 60px;
+	position: relative;
+	transition: .2s all ease;
+
 }
 
+.project-row li {
+	border: 1px solid $black;
+	padding: 10px;
+	text-align: center;
+}
+
+//.img-1 {
+//	background: url('../img/mid/feature2.jpg') no-repeat center;	
+//	min-height: 200px;
+//	min-width: 200px;
+//}
+
+
+.project-img {
+	background: $yellow;
+	transition: .2s all ease;
+}
+
+.project-img h5 {
+	color: $black;
+	position: absolute;
+	left: 50%;
+	top: 25%;
+	-webkit-transform: translate(-50%, 50%);
+	transform: translate(-50%, 50%);
+	text-align: center;
+}
+
+.project-img h5::after {
+	font-family: $webdings;
+	content: '';
+	display: block;
+	font-size: 1.5rem;
+	margin-top: 5px;
+	transform: rotate(-120deg);
+}
+
+
+.project-row li:hover {	
+	
+	img {
+		opacity: 0;
+	}
+}
+
+
+.project-row li p.title {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-size: 1.2rem;
+}
+
+.project-row li p.details {
+	font-style: italic;
+	font-size: .8rem;
+}
+
+.project-row li p span {
+	font-family: $webdings;
+}
 
 
 
