@@ -1,3 +1,6 @@
+@import "foundation/components/block-grid";
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
+
 //fonts
 $monospace: 'Cutive Mono', Courier, Courier New, monospace;
 $bebas: "bebas-neue", Impact, Arial, Helvetica, sans-serif;
@@ -10,7 +13,8 @@ $white: #fff;
 $grey:#f4f4f4;
 $pink: #ff897b;
 
-@import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
+//styles
+$border: 1px solid $black;
 
 html {
 	height: 100%;
@@ -22,8 +26,13 @@ body {
 	color: $black;
 	background-color: $grey;
 	min-height: 100%;
+	width: 100%;
+	position: fixed;
 }
 
+
+::-moz-selection { background: $yellow; }
+::selection { background: $yellow;}
 
 // !!! 3 feature grid !!!
 		//body, .off-canvas-wrap, .inner-wrap {
@@ -54,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 //structure
 
 //.off-canvas-wrap {
-//	 border: 1px solid black;
+//	 border: $border;
 //}
 
 a:link, a:active, a:visited {
@@ -65,9 +74,14 @@ a:hover, a:focus {
 	color: $pink;
 }
 
-.container, .row {
-	min-height: 100%;
-}
+//.container {
+//	height: 100%;
+//	position: fixed;
+//}
+
+//.container, .row {
+//	min-height: 100%;
+//}
 
 .row {
 	max-width: 100%;
@@ -82,8 +96,10 @@ a:hover, a:focus {
 .menu-container {
 	width: 0;
 	height: 0;
-	border-top: 120px solid $pink;
-	border-right: 120px solid transparent;
+	border-top: 40px solid $pink;
+	border-right: 40px solid transparent;
+	margin-top: 10px;
+	margin-left: 10px;
 }
 
 .menu-text {
@@ -136,14 +152,14 @@ a:hover, a:focus {
 	width: 40%;
 }
 
-.logo-container h1 {
-	font-size: 1.2rem;
-	margin-bottom: 10px;
-	margin-top: 40px;
+.logo {
+	max-width: 100px;
 }
 
-.logo {
-	max-width: 120px;
+.charissa {
+	font-size: 1.75rem;
+	margin-bottom: -5px;
+	margin-top: 30px;
 }
 
 .designer {
@@ -155,26 +171,27 @@ a:hover, a:focus {
 
 .zigzag {
 	background: url('../img/zigzag300px.png') no-repeat;
-	background-size: 40px;
+	background-size: 50px;
 	display: block;
 }
 
 .zigzag:hover {
 	background: url('../img/zigzag300px.gif') no-repeat;
-	background-size: 40px;
+	background-size: 50px;
 }
 
 .menu {
-	margin: 50px 0px 70px;
+	margin: 40px 0px 70px;
 	max-width: 200px;
 	
 	a {
 		display: block;
-		border-bottom: 1px solid $black;
+		border-bottom: $border;
 		padding: 10px 0px;
 	}
 	
 	a:hover {
+		color: $black;
 		background: url(../img/link_bg_small_rect.gif) no-repeat center;
 	}
 }	
@@ -198,7 +215,7 @@ a:hover, a:focus {
 	color: $black;
 	transition: .2s all;
 	-webkit-transition: .2s all;
-	border: 1px solid $black;
+	border: $border;
 	padding-bottom: 5px;
 }
 
@@ -283,6 +300,46 @@ a:hover, a:focus {
 //	top: 0;
 //}
 
+
+.work-grid {
+  @include block-grid(
+    $per-row: 2,
+
+    // This controls how much space is between each item in the block grid.
+    // Use a variable or any pixel or em values.
+//		$spacing: $block-grid-default-spacing,
+
+    // This controls whether or not base styles come through, set to false to leave out.
+    $base-style: true
+  );
+}
+
+//MAKE THE LI'S LINKS
+.work-grid li {
+	padding-top: 10px;
+	padding-bottom: 80px;
+	margin: 15px;
+}
+
+.work-grid li, .work-grid li img {
+	border: $border;
+}
+
+@media screen and (min-width:642px) {
+	.work-grid > li {
+		width: auto;
+	}
+}
+
+//@media screen and (min-width:1400px) {
+//	.work-grid {
+//		@include block-grid(
+//			$spacing: 6rem
+//		);	
+//	}
+//}
+
+	
 .project-container {
 	display: inline-block;
 	width: 60%;
@@ -301,7 +358,7 @@ a:hover, a:focus {
 //	background-color:$white;
 //	padding: 10px;
 //	padding-bottom: 60px;
-//	border: 1px solid $black;
+//	border: $border;
 //}
 
 .project-row li, .project-row li img {
@@ -312,7 +369,7 @@ a:hover, a:focus {
 }
 
 .project-row li {
-	border: 1px solid $black;
+	border: $border;
 	padding: 10px;
 	text-align: center;
 }
@@ -328,6 +385,7 @@ a:hover, a:focus {
 //	background: $yellow;
 	background: url(../img/link_bg_square.gif) no-repeat center;
 	background-size: contain;
+	border: 1px solid $black;
 	transition: .2s all ease;
 }
 
