@@ -4,11 +4,10 @@ $bebas: "bebas-neue", Impact, Arial, Helvetica, sans-serif;
 $webdings: 'Webdings';
 
 //colors
-$yellow: #f0f066;
+$yellow: #f0f04e;
 $black: #222;
 $white: #fff;
 $grey:#f4f4f4;
-$pink: #ff897b;
 
 @import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
 
@@ -17,7 +16,7 @@ html {
 }
 
 body {
-	border: 11px solid $black;
+	border: 11px solid $yellow;
 	font: 16px/20px $monospace normal;
 	color: $black;
 	background-color: $grey;
@@ -57,14 +56,6 @@ h1, h2, h3, h4, h5, h6 {
 //	 border: 1px solid black;
 //}
 
-a:link, a:active, a:visited {
-	color: $black;
-}
-
-a:hover, a:focus {
-	color: $pink;
-}
-
 .container, .row {
 	min-height: 100%;
 }
@@ -82,7 +73,7 @@ a:hover, a:focus {
 .menu-container {
 	width: 0;
 	height: 0;
-	border-top: 120px solid $pink;
+	border-top: 120px solid $yellow;
 	border-right: 120px solid transparent;
 }
 
@@ -147,9 +138,8 @@ a:hover, a:focus {
 }
 
 .designer {
-	font-family: $monospace;
 	font-size: 1rem;
-	letter-spacing: 0px;
+	letter-spacing: 3px;
 	margin-top: -5px;
 }
 
@@ -163,21 +153,6 @@ a:hover, a:focus {
 	background: url('../img/zigzag300px.gif') no-repeat;
 	background-size: 40px;
 }
-
-.menu {
-	margin: 50px 0px 70px;
-	max-width: 200px;
-	
-	a {
-		display: block;
-		border-bottom: 1px solid $black;
-		padding: 10px 0px;
-	}
-	
-	a:hover {
-		background: url(../img/link_bg_small_rect.gif) no-repeat center;
-	}
-}	
 
 .social {
 	font-size: .9rem;
@@ -198,7 +173,7 @@ a:hover, a:focus {
 	color: $black;
 	transition: .2s all;
 	-webkit-transition: .2s all;
-	border: 1px solid $black;
+	border: 2px solid $black;
 	padding-bottom: 5px;
 }
 
@@ -325,9 +300,7 @@ a:hover, a:focus {
 
 
 .project-img {
-//	background: $yellow;
-	background: url(../img/link_bg_square.gif) no-repeat center;
-	background-size: contain;
+	background: $yellow;
 	transition: .2s all ease;
 }
 
@@ -335,7 +308,7 @@ a:hover, a:focus {
 	color: $black;
 	position: absolute;
 	left: 50%;
-	top: 20%;
+	top: 25%;
 	-webkit-transform: translate(-50%, 50%);
 	transform: translate(-50%, 50%);
 	text-align: center;
@@ -343,10 +316,11 @@ a:hover, a:focus {
 
 .project-img h5::after {
 	font-family: $webdings;
-	content: '';
+	content: '';
 	display: block;
-	font-size: 3.5rem;
-	margin-top: -15px;
+	font-size: 1.5rem;
+	margin-top: 5px;
+	transform: rotate(-120deg);
 }
 
 
