@@ -321,9 +321,51 @@ a:hover, a:focus {
 	margin: 15px;
 }
 
-.work-grid li, .work-grid li img {
+.work-grid li a {
+	background: #F4F4F5 url(../img/link_bg_square.gif);
+	background-size: contain;
+	display: block;
+	border: $border;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.work-grid li a h5 {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%);
+	-webkit-transform: translate(-50%);
+	font-size: 1.25rem;
+	text-align: center;
+	display: none;
+}
+
+.work-grid li a h5::after {
+	font-family: $webdings;
+	content: '';
+	text-align: center;
+	display:none;
+	font-size: 3.5rem;
+	margin-top: -15px;
+}
+
+.work-grid li {
 	border: $border;
 	background-color: white;
+}
+
+.work-grid li img {
+		transition: all .15s;
+		-webkit-transition: all .15s;
+}
+
+.work-grid li:hover h5, .work-grid li:hover h5::after {
+	display: block;
+}
+
+.work-grid li:hover img {
+	opacity: 0;
 }
 
 @media screen and (min-width:642px) {
