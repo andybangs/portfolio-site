@@ -16,20 +16,54 @@ $pink: #ff897b;
 //styles
 $border: 1px solid $black;
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+  overflow-y: scroll;
+}
+
 html {
 	height: 100%;
 }
 
 body {
-	border: 11px solid $black;
+	border-left: 11px solid $black;
+	border-right: 11px solid $black;
 	font: 16px/20px $monospace normal;
 	color: $black;
 	background-color: $grey;
 	min-height: 100%;
 	width: 100%;
-	position: fixed;
 }
 
+//borders
+body:before, body:after {
+    content: "";
+    position: fixed;
+    background: $black;
+    left: 0;
+    right: 0;
+    height: 10px;
+		z-index: 9999;
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+//end borders
+
+.webdings {
+	font-family: $webdings;
+}
+
+.serif {
+	font-family: 'Cutive Mono', Courier, Courier New, monospace;
+}
 
 ::-moz-selection { background: $yellow; }
 ::selection { background: $yellow;}
@@ -314,6 +348,10 @@ a:hover, a:focus {
   );
 }
 
+.work-grid img {
+	max-width: 250px;
+}
+
 //MAKE THE LI'S LINKS
 .work-grid li {
 	padding-top: 10px;
@@ -473,6 +511,75 @@ a:hover, a:focus {
 .project-row li p span {
 	font-family: $webdings;
 }
+
+
+/////
+
+.view-port {
+	display: none;
+	width: 250px;
+	height: 250px;
+	border: 1px solid $black;
+	background: $grey url(../img/link_bg_square.gif) center no-repeat;
+	background-size: contain;
+	h3 {
+		text-align: center;
+		line-height: 250px;
+		font-size: 1.5rem;
+	}
+	h3::after {
+		font-family: $webdings;
+		content: '';
+		display: block;
+		font-size: 2.5rem;
+		line-height: 0;
+		margin-top: -100px;
+	}
+}
+
+.port {
+	width: 80%;
+	display: table;
+		a {
+			padding: 10px 10px 20px;
+			display: inline-block;
+			float:left;
+			margin:15px;
+			background: $white;
+			border: 1px solid $black;
+			position: relative;
+		}
+		a:hover {
+			img {
+				display: none;
+			}
+			.view-port {
+				display: block;
+			}
+		}
+		a img {
+			max-width: 250px;
+			border: 1px solid $black;
+		}
+		a h2, h4 {
+			text-align: center;
+			letter-spacing: -.05rem;
+		}
+		a h2 {
+			font-size: 1.15rem;
+			line-height: 1rem;
+			margin-top: 30px;
+		}
+		a h4 {
+			font-size: 1rem;
+		}
+}
+
+
+
+
+
+
 
 
 
