@@ -93,6 +93,10 @@ $include-html-global-classes: $include-html-classes;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
+$monospace: 'Cutive Mono', Courier, Courier New, monospace;
+$bebas: "bebas-neue", Impact, Arial, Helvetica, sans-serif;
+$webdings: 'Webdings';
+
 // We use these to define default font weights
 // $font-weight-normal: normal;
 // $font-weight-bold: bold;
@@ -116,6 +120,15 @@ $include-html-global-classes: $include-html-classes;
 // $oil         : #333333;
 // $jet         : #222222;
 // $black       : #000000;
+
+$yellow: #f0f066;
+$black: #222;
+$white: #fff;
+$grey:#f4f4f4;
+$pink: #ff897b;
+
+// styles
+$border: 1px solid $black;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;

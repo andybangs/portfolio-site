@@ -1,29 +1,15 @@
+@import "settings";
 @import "foundation/components/block-grid";
 @import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
-
-//fonts
-$monospace: 'Cutive Mono', Courier, Courier New, monospace;
-$bebas: "bebas-neue", Impact, Arial, Helvetica, sans-serif;
-$webdings: 'Webdings';
-
-//colors
-$yellow: #f0f066;
-$black: #222;
-$white: #fff;
-$grey:#f4f4f4;
-$pink: #ff897b;
-
-//styles
-$border: 1px solid $black;
 
 * {
 	margin: 0;
 	padding: 0;
 }
 
-html, body {
-  overflow-y: scroll;
-}
+//html, body {
+//  overflow-y: scroll;
+//}
 
 html {
 	height: 100%;
@@ -87,11 +73,15 @@ img {
 	max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
 	font-family: $bebas;
-	letter-spacing: 3px;
+	letter-spacing: .15rem;
 	font-style: normal;
 	font-weight: 400;
+}
+
+h6 {
+    font-family: $monospace;
 }
 
 //structure
@@ -466,7 +456,7 @@ a:hover, a:focus {
 //	background: $yellow;
 	background: url(../img/link_bg_square.gif) no-repeat center;
 	background-size: contain;
-	border: 1px solid $black;
+	border: $border;
 	transition: .2s all ease;
 }
 
@@ -519,7 +509,7 @@ a:hover, a:focus {
 	display: none;
 	width: 250px;
 	height: 250px;
-	border: 1px solid $black;
+	border: $border;
 	background: $grey url(../img/link_bg_square.gif) center no-repeat;
 	background-size: contain;
 	h3 {
@@ -546,7 +536,7 @@ a:hover, a:focus {
 			float:left;
 			margin:15px;
 			background: $white;
-			border: 1px solid $black;
+			border: $border;
 			position: relative;
 		}
 		a:hover {
@@ -559,7 +549,7 @@ a:hover, a:focus {
 		}
 		a img {
 			max-width: 250px;
-			border: 1px solid $black;
+			border: $border;
 		}
 		a h2, h4 {
 			text-align: center;

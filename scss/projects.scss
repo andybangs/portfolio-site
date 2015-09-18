@@ -1,0 +1,83 @@
+@import "settings";
+
+body {
+    padding: 30px 15px;
+}
+
+.proj-logo-container {
+    text-align: center;
+}
+
+.proj-logo {
+    max-width: 50px;
+}
+
+.prev, .next {
+    padding-bottom: 3rem;
+}
+
+.prev:hover, .next:hover {
+    background: url(../img/zigzag300px.gif) no-repeat;
+    background-size: 35px;
+}
+
+.prev:hover {
+    background-position: 4% 25px;
+}
+
+.next:hover {
+    background-position: 95% 25px;
+}
+
+.next {
+    text-align: right;
+}
+
+.proj-title {
+    h3 {
+        line-height: normal;
+    }
+    h6 {
+        font-style: italic;
+        border-bottom: $border;
+        padding-bottom: 1.3rem;
+    }
+}
+
+.proj-desc {
+    padding-top: 1rem;
+}
+
+.proj-info {
+    max-width: 400px;
+    border: $border;
+    margin-bottom: 2rem;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            border-bottom: $border;
+            padding: 10px 20px;
+            }
+        li:last-child {
+            border-bottom: 0;
+        }
+        li > h5, p {
+            margin: -3px 0;
+        }
+        li h5 {
+            margin-top: 5px;
+        }
+    }
+}
+
+.proj-container {
+    width: 80%;
+    min-height: 100%;
+    margin: 0 auto;
+    
+    img {
+        margin: .3rem 0;
+    }
+}
