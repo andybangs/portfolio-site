@@ -435,8 +435,6 @@ a:hover, a:focus {
 .project-row li, .project-row li img {
 	min-height: 100%;
 	position: relative;
-	transition: .2s all ease;
-
 }
 
 .project-row li {
@@ -511,7 +509,7 @@ a:hover, a:focus {
 	height: 250px;
 	border: $border;
 	background: $grey url(../img/link_bg_square.gif) center no-repeat;
-	background-size: contain;
+	background-size: contain;;
 	h3 {
 		text-align: center;
 		line-height: 250px;
@@ -542,6 +540,8 @@ a:hover, a:focus {
 		a:hover {
 			img {
 				display: none;
+                -webkit-transition: .2s display ease;
+	            transition: .2s display ease
 			}
 			.view-port {
 				display: block;

@@ -4,6 +4,15 @@ body {
     padding: 30px 15px;
 }
 
+.no-margin {
+    margin: 0 !important;
+    padding: 0;
+}
+
+//.proj-info-container {
+//    position: fixed;
+//}
+
 .proj-logo-container {
     text-align: center;
 }
@@ -34,7 +43,15 @@ body {
 }
 
 .proj-title {
+    img, h3, h6 {
+        display: inline-block;
+    }
+    img {
+        float: right;
+        max-width: 70px;
+    }
     h3 {
+        float: left;
         line-height: normal;
     }
     h6 {
@@ -81,3 +98,18 @@ body {
         margin: .3rem 0;
     }
 }
+
+.brand-img {
+    padding-bottom: 3rem;
+}
+
+.logo-construction {
+    text-align: center;
+    margin: 0 auto;
+//    padding-top: 3rem;
+}
+
+
+
+
+
