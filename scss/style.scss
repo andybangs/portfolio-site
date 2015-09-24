@@ -11,21 +11,17 @@
 //  overflow-y: scroll;
 //}
 
-html {
-	height: 100%;
+html, body {
+	height: 100% !important;
 }
 
 body {
-	border-left: 11px solid $black;
-	border-right: 11px solid $black;
 	font: 16px/20px $monospace normal;
 	color: $black;
 	background-color: $grey;
-	min-height: 100%;
 	width: 100%;
 }
 
-//borders
 body:before, body:after {
     content: "";
     position: fixed;
@@ -40,6 +36,14 @@ body:before {
 }
 body:after {
     bottom: 0;
+}
+
+.body-wrap {
+    min-height: 100%;
+    border-left: 11px solid $black;
+    border-right: 11px solid $black;
+    box-sizing: border-box;
+    padding: 2rem 1.5rem;
 }
 //end borders
 
