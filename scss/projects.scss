@@ -2,7 +2,7 @@
 
 .no-margin {
     margin: 0 !important;
-    padding: 0;
+    padding: 0 !important;
 }
 
 .home-logo {
@@ -45,6 +45,21 @@
         right: .25rem;
         padding-left: 5rem;
     }
+}
+
+.proj-section {
+    padding-top: .5rem;
+    border-top: 3px solid $black;
+    width: 100%;
+    margin: 2rem 0;
+    margin-bottom: 0;
+}
+
+.proj-section-role {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: .8rem;
+    font-style: italic;
 }
 
 .proj-title {
@@ -116,20 +131,6 @@
     text-align: center;
     margin: 0 auto;
 //    padding-top: 3rem;
-}
-
-.big-next-button {
-    h2 {
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        padding: 2rem;
-        
-        &:hover {
-            background: url(../img/link_bg_square.gif) no-repeat center;
-        }
-    }
-    
 }
 
 

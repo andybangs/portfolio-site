@@ -569,7 +569,19 @@ a:hover, a:focus {
 		}
 }
 
-
+.big-next-button {
+    h2 {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 2rem;
+        
+        &:hover {
+            background: url(../img/link_bg_square.gif) no-repeat center;
+        }
+    }
+    
+}
 
 
 
