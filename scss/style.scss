@@ -113,6 +113,8 @@ a:hover, a:focus {
 
 .row {
 	max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .large-4, .large-8 {
@@ -509,14 +511,14 @@ a:hover, a:focus {
 
 .view-port {
 	display: none;
-	width: 250px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
 	border: $border;
 	background: $grey url(../img/link_bg_square.gif) center no-repeat;
 	background-size: contain;;
 	h3 {
 		text-align: center;
-		line-height: 250px;
+		line-height: 200px;
 		font-size: 1.5rem;
 	}
 	h3::after {
@@ -525,12 +527,11 @@ a:hover, a:focus {
 		display: block;
 		font-size: 2.5rem;
 		line-height: 0;
-		margin-top: -100px;
+		margin-top: -70px;
 	}
 }
 
 .port {
-	width: 80%;
 	display: table;
 		a {
 			padding: 10px 10px 20px;
@@ -552,7 +553,7 @@ a:hover, a:focus {
 			}
 		}
 		a img {
-			max-width: 250px;
+			max-width: 200px;
 			border: $border;
 		}
 		a h2, h4 {
@@ -583,12 +584,37 @@ a:hover, a:focus {
     
 }
 
+@media screen and (max-width: 886px) {
+    
+}
 
+@media screen and (min-width: 950px) {
+    .columns {
+        padding: 5%;
+    }
+    .menu-col {
+        position:fixed;
+    }
+}
 
-
-
-
-
+@media screen and (min-width: 1151px) {
+    .columns {
+        padding: 5%;
+    }
+    .view-port {
+        width: 250px;
+        height: 250px;
+    }
+    .view-port h3 {
+        line-height: 250px;
+    }
+    .view-port h3::after {
+        margin-top: -100px;
+    }
+    .port a img {
+        max-width: 250px
+    }
+}
 
 
 
