@@ -117,6 +117,10 @@ a:hover, a:focus {
     margin-right: 0;
 }
 
+.columns {
+    padding: 5%;
+}
+
 .large-4, .large-8 {
 	padding: 5%;
 }
@@ -132,12 +136,58 @@ a:hover, a:focus {
 	margin-left: 10px;
 }
 
-.menu-text {
-  position: absolute;
-  top: 25px;
-  left: 10px;
-	color: $black;
+.name-container {
+    display: table;
+        .logo-container {
+            text-align: left;
+            padding-left: 110px;
+            display: inline-block;
+            float: left;
+            width: 40%;
+        }
+    
+        .logo, .name {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .logo {
+            max-width: 70px;
+            margin-right: 1rem;
+        }
+
+        .charissa {
+            font-size: 1.75rem;
+            margin-bottom: -5px;
+        //	margin-top: 30px;
+        }
+
+        .designer {
+            font-family: $monospace;
+            font-size: 1rem;
+            letter-spacing: 0px;
+            margin-top: -5px;
+        }
+
+        .zigzag {
+            background: url('../img/zigzag300px.png') no-repeat;
+            background-size: 50px;
+            display: block;
+        }
+
+        .zigzag:hover {
+            background: url('../img/zigzag300px.gif') no-repeat;
+            background-size: 50px;
+        }
 }
+
+
+//.menu-text {
+//  position: absolute;
+//  top: 25px;
+//  left: 10px;
+//    color: $black;
+//}
 
 .left-off-canvas-menu {
 	background-color: $yellow;
@@ -170,45 +220,6 @@ a:hover, a:focus {
 .resume:hover, .resume:focus {
 	color: $yellow;
 	box-shadow: inset 250px 0 0 0 $black;
-}
-
-
-
-.logo-container {
-	text-align: left;
-	padding-left: 110px;
-	display: inline-block;
-	float: left;
-	width: 40%;
-}
-
-.logo {
-	max-width: 70px;
-    margin-right: 1rem;
-}
-
-.charissa {
-	font-size: 1.75rem;
-	margin-bottom: -5px;
-	margin-top: 30px;
-}
-
-.designer {
-	font-family: $monospace;
-	font-size: 1rem;
-	letter-spacing: 0px;
-	margin-top: -5px;
-}
-
-.zigzag {
-	background: url('../img/zigzag300px.png') no-repeat;
-	background-size: 50px;
-	display: block;
-}
-
-.zigzag:hover {
-	background: url('../img/zigzag300px.gif') no-repeat;
-	background-size: 50px;
 }
 
 .menu {
@@ -588,33 +599,11 @@ a:hover, a:focus {
     
 }
 
-@media screen and (max-width: 886px) {
-    
-}
 
 @media screen and (min-width: 950px) {
-    .columns {
-        padding: 5%;
-    }
     .menu-col {
         position:fixed;
     }
-}
-
-@media screen and (min-width: 1151px) {
-    .columns {
-        padding: 5%;
-    }
-//    .view-port {
-//        width: 250px;
-//        height: 250px;
-//    }
-//    .view-port h3 {
-//        line-height: 250px;
-//    }
-//    .view-port h3::after {
-//        margin-top: -100px;
-//    }
 }
 
 @media screen and (min-width: 1030px) and (max-width: 1190px) {
