@@ -579,6 +579,7 @@ a:hover, a:focus {
         margin: 0 auto;
         text-align: center;
         padding: 2rem;
+        line-height: 1.65rem;
         
         &:hover {
             background: url(../img/link_bg_square.gif) no-repeat center;
@@ -626,7 +627,7 @@ a:hover, a:focus {
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 950px) and (min-width: 642px) {
     .port a {
         min-height: 260px;
         padding-bottom: 0px;
@@ -641,3 +642,25 @@ a:hover, a:focus {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .port a {
+        padding: 15px 15px 20px;
+        width: 70%;
+        float: right;
+        h2, h4 {
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (max-width: 641px) {
+    .port {
+        text-align: center;
+         a {
+            float: none; 
+             h2 {
+                 font-size: 1.25rem;
+             }
+        }
+    }
+}
