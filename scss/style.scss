@@ -153,20 +153,23 @@ a:hover, a:focus {
 
         .logo {
             max-width: 70px;
-            margin-right: 1rem;
+            margin-right: .75rem;
         }
 
         .charissa {
             font-size: 1.75rem;
-            margin-bottom: -5px;
+            margin-bottom: 5px;
+            text-align: left;
+            line-height: 1.5rem;
         //	margin-top: 30px;
         }
 
         .designer {
             font-family: $monospace;
             font-size: 1rem;
-            letter-spacing: 0px;
+            letter-spacing: -.03rem;
             margin-top: -5px;
+            text-align: left;
         }
 
         .zigzag {
@@ -223,9 +226,7 @@ a:hover, a:focus {
 }
 
 .menu {
-	margin: 40px 0px 70px;
-	max-width: 200px;
-	
+    margin: 10px 0;
 	a {
 		display: block;
 		border-bottom: $border;
@@ -554,6 +555,33 @@ a:hover, a:focus {
 			border: $border;
 			position: relative;
             width: 35%;
+            .port-img {
+                position:relative;
+                width:100%;
+                padding-bottom:100%;
+                h3 {
+                   position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform:translate(-50%,-50%);
+                    -webkit-transform:translate(-50%,-50%);
+                    color:$white;
+                    text-align:center;
+                    line-height:1.75rem; 
+                }
+            }
+            .hewitt {
+                background: url(../img/rh/rh-cover.jpg) no-repeat center;
+                background-size: cover;
+                background-color: #ffa49e;
+                background-blend-mode: screen;
+            }    
+            .lov {
+                background: url(../img/lov/lov_cover3.jpg) no-repeat center;
+                background-size: cover;
+                background-color: #ffa49e;
+                background-blend-mode: overlay;
+            }
 		}
 //		a:hover {
 //			img {
@@ -642,13 +670,57 @@ a:hover, a:focus {
     }
 }
 
+@media screen and (min-width:642px) and (max-width: 1130px) {
+    .name {
+        margin-top: 20px;
+        .designer {
+            margin-top: 5px;
+            line-height: .75rem;
+        }
+    }
+    
+}
+
 @media screen and (max-width: 641px) {
+    
+    .body-wrap {
+        padding: 2rem 0;
+    }
+    .columns {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+   .name-container {
+        display: block;
+       .logo {
+           max-width: 50px;
+       }
+    }
+    .menu {
+        max-width: 70%;
+        margin: 0 auto;
+    }
     .port {
         text-align: center;
          a {
             float: none; 
+            padding: 0;
+            margin: 0;
+            border: 0;
+            margin-top: 10px;
+            .port-img {
+                border: 1px solid $black;
+            }
+            h2, h4 {
+                text-align: center;
+            } 
              h2 {
-                 font-size: 1.25rem;
+                font-size: 1.25rem;
+                margin-top: 15px;
+             }
+             h4 {
+                 margin-bottom: 15px;
              }
         }
     }
