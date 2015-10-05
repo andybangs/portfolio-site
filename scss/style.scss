@@ -245,28 +245,47 @@ a:hover, a:focus {
 	padding-left: 0px;
 	margin-left: 0px;
 	margin-top: 40px;
+    li {
+        display: inline-block;
+        a {
+            background-color: transparent;
+            padding: 10px;
+            text-align: center;
+            color: $black;
+            transition: .2s all;
+            -webkit-transition: .2s all;
+            border: $border;
+            padding-bottom: 5px;
+            &:hover {
+                background-color: $black;
+                color: $white;
+                border-radius: 100%;
+                text-decoration: none;
+            }
+        }
+    }
 }
 
-.social li {
-	display: inline-block;
-}
-
-.social li a {
-	background-color: transparent;
-	padding: 10px;
-	text-align: center;
-	color: $black;
-	transition: .2s all;
-	-webkit-transition: .2s all;
-	border: $border;
-	padding-bottom: 5px;
-}
-
-.social li a:hover {
-	background-color: $black;
-	color: $white;
-	border-radius: 100%;
-	text-decoration: none;
+.quote {
+    display: block;
+    position: relative;
+    margin-top: 50px;
+    p {
+        line-height: 1rem;
+        position: absolute;
+    }
+    &::before {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        background: url(../img/link_bg_square.png) no-repeat;
+        background-size: 300%;
+        top: -15px;
+        left: -10px;
+        transform: rotate(45deg);
+    }
 }
 
 // about modal
@@ -559,28 +578,46 @@ a:hover, a:focus {
                 position:relative;
                 width:100%;
                 padding-bottom:100%;
+                border: $border;
+                transition: all .15s;
+                -webkit-transition: all .15s;
                 h3 {
-                   position:absolute;
+                    display: none;
+                    position:absolute;
                     top:50%;
                     left:50%;
                     transform:translate(-50%,-50%);
                     -webkit-transform:translate(-50%,-50%);
                     color:$white;
                     text-align:center;
-                    line-height:1.75rem; 
+                    line-height:1.75rem;
+                    transition: all .15s;
+                    -webkit-transition: all .15s;
                 }
             }
+            
             .hewitt {
                 background: url(../img/rh/rh-cover.jpg) no-repeat center;
-                background-size: cover;
-                background-color: #ffa49e;
-                background-blend-mode: screen;
             }    
             .lov {
                 background: url(../img/lov/lov_cover3.jpg) no-repeat center;
+            }
+            .midtown {
+                background: url(../img/mp/mp_cover.jpg) no-repeat center;
+            }
+            .hm {
+                background: url(../img/hm/hm_cover.jpg) no-repeat center;
+                background: url(../img/hm/hm_cover.jpg) no-repeat center;
+            }
+            .hewitt, .lov, .midtown, .hm {
                 background-size: cover;
-                background-color: #ffa49e;
-                background-blend-mode: overlay;
+            }
+            &:hover .port-img {
+                background: $pink url(../img/link_bg_square.gif) no-repeat center;
+                background-size: cover;
+            }
+            &:hover .port-img h3 {
+                display: block;
             }
 		}
 //		a:hover {
@@ -678,7 +715,6 @@ a:hover, a:focus {
             line-height: .75rem;
         }
     }
-    
 }
 
 @media screen and (max-width: 641px) {
