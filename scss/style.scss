@@ -183,7 +183,8 @@ a:hover, a:focus {
 }
 
 .logo {
-	max-width: 100px;
+	max-width: 70px;
+    margin-right: 1rem;
 }
 
 .charissa {
@@ -511,11 +512,11 @@ a:hover, a:focus {
 
 .view-port {
 	display: none;
-	width: 200px;
-	height: 200px;
-	border: $border;
-	background: $grey url(../img/link_bg_square.gif) center no-repeat;
-	background-size: contain;;
+//	width: 200px;
+//	height: 200px;
+//	border: $border;
+//	background: $grey url(../img/link_bg_square.gif) center no-repeat;
+//	background-size: contain;;
 	h3 {
 		text-align: center;
 		line-height: 200px;
@@ -541,19 +542,20 @@ a:hover, a:focus {
 			background: $white;
 			border: $border;
 			position: relative;
+            width: 35%;
 		}
-		a:hover {
-			img {
-				display: none;
-                -webkit-transition: .2s display ease;
-	            transition: .2s display ease
-			}
-			.view-port {
-				display: block;
-			}
-		}
+//		a:hover {
+//			img {
+//				display: none;
+//                -webkit-transition: .2s display ease;
+//	            transition: .2s display ease
+//			}
+//			.view-port {
+//				display: block;
+//			}
+//		}
 		a img {
-			max-width: 200px;
+//			max-width: 200px;
 			border: $border;
 		}
 		a h2, h4 {
@@ -567,6 +569,7 @@ a:hover, a:focus {
 		}
 		a h4 {
 			font-size: 1rem;
+            line-height: 1rem;
 		}
 }
 
@@ -601,21 +604,40 @@ a:hover, a:focus {
     .columns {
         padding: 5%;
     }
-    .view-port {
-        width: 250px;
-        height: 250px;
-    }
-    .view-port h3 {
-        line-height: 250px;
-    }
-    .view-port h3::after {
-        margin-top: -100px;
-    }
-    .port a img {
-        max-width: 250px
+//    .view-port {
+//        width: 250px;
+//        height: 250px;
+//    }
+//    .view-port h3 {
+//        line-height: 250px;
+//    }
+//    .view-port h3::after {
+//        margin-top: -100px;
+//    }
+}
+
+@media screen and (min-width: 1030px) and (max-width: 1190px) {
+    .port a {
+        min-height: 290px;
+        padding-bottom: 0px;
+        h2 {
+            margin-top: 20px;
+        }
     }
 }
 
-
-
+@media screen and (max-width: 950px) {
+    .port a {
+        min-height: 260px;
+        padding-bottom: 0px;
+        
+        h2 {
+            margin-top: 15px;
+        }
+        h4 {
+            font-size: .9rem;
+            line-height: .9rem;
+        }
+    }
+}
 
