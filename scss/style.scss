@@ -588,7 +588,6 @@ a:hover, a:focus {
                     left:50%;
                     transform:translate(-50%,-50%);
                     -webkit-transform:translate(-50%,-50%);
-                    color:$white;
                     text-align:center;
                     line-height:1.75rem;
                     transition: all .15s;
@@ -597,10 +596,10 @@ a:hover, a:focus {
             }
             
             .hewitt {
-                background: url(../img/rh/rh-cover.jpg) no-repeat center;
+                background: url(../img/rh/rh-cover3.jpg) no-repeat center;
             }    
             .lov {
-                background: url(../img/lov/lov_cover3.jpg) no-repeat center;
+                background: url(../img/lov/lov-cover.jpg) no-repeat center;
             }
             .midtown {
                 background: url(../img/mp/mp_cover.jpg) no-repeat center;
@@ -611,11 +610,14 @@ a:hover, a:focus {
             .sln {
                 background: url(../img/sln/sln-cover.jpg) no-repeat center;
             }
-            .hewitt, .lov, .midtown, .hm, .sln {
+            .cam {
+                background: url(../img/cam/cam-cover.jpg) no-repeat center;
+            }
+            .hewitt, .lov, .midtown, .hm, .sln, .cam {
                 background-size: cover;
             }
             &:hover .port-img {
-                background: $pink url(../img/link_bg_square.gif) no-repeat center;
+                background: $grey url(../img/link_bg_square.gif) no-repeat center;
                 background-size: cover;
             }
             &:hover .port-img h3 {
