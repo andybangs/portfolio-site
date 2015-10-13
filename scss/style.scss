@@ -7,10 +7,6 @@
 	padding: 0;
 }
 
-//html, body {
-//  overflow-y: scroll;
-//}
-
 html, body {
 	height: 100% !important;
 }
@@ -29,7 +25,7 @@ body:before, body:after {
     left: 0;
     right: 0;
     height: 10px;
-		z-index: 9999;
+    z-index: 9800;
 }
 body:before {
     top: 0;
@@ -40,8 +36,8 @@ body:after {
 
 .body-wrap {
     min-height: 100%;
-    border-left: 11px solid $black;
-    border-right: 11px solid $black;
+    border-left: 10px solid $black;
+    border-right: 10px solid $black;
     box-sizing: border-box;
     padding: 2rem 1.5rem;
 }
@@ -226,7 +222,7 @@ a:hover, a:focus {
 }
 
 .menu {
-    margin: 10px 0;
+    margin: 30px 0;
 	a {
 		display: block;
 		border-bottom: $border;
@@ -247,6 +243,7 @@ a:hover, a:focus {
 	margin-top: 40px;
     li {
         display: inline-block;
+        padding-bottom: 20px;
         a {
             background-color: transparent;
             padding: 10px;
@@ -602,13 +599,13 @@ a:hover, a:focus {
                 background: url(../img/lov/lov-cover.jpg) no-repeat center;
             }
             .midtown {
-                background: url(../img/mp/mp_cover.jpg) no-repeat center;
+                background: url(../img/mp/mp-cover.jpg) no-repeat center;
             }
             .hm {
                 background: url(../img/hm/hm_cover.jpg) no-repeat center;
             }
             .sln {
-                background: url(../img/sln/sln-cover.jpg) no-repeat center;
+                background: url(../img/sln/sln-cover2.jpg) no-repeat center;
             }
             .cam {
                 background: url(../img/cam/cam-cover.jpg) no-repeat center;
@@ -702,7 +699,7 @@ a:hover, a:focus {
 
 @media screen and (max-width: 1024px) {
     .port a {
-        padding: 15px 15px 20px;
+        padding: 10px 10px 20px;
         width: 70%;
         float: right;
         h2, h4 {
@@ -741,13 +738,14 @@ a:hover, a:focus {
         max-width: 70%;
         margin: 0 auto;
     }
+    .social li {
+        padding-bottom: 0;
+    }
     .port {
         text-align: center;
          a {
             float: none; 
-            padding: 0;
             margin: 0;
-            border: 0;
             margin-top: 10px;
             .port-img {
                 border: 1px solid $black;

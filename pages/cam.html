@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="../stylesheets/app.css" />
     <link rel="stylesheet" href="../stylesheets/style.css" />
     <link rel="stylesheet" href="../stylesheets/projects.css" />
-    <link rel="stylesheet" href="../stylesheets/projects.css" />
     <link rel="stylesheet" href="../stylesheets/featherlight.min.css" />
+    <link rel="stylesheet" href="../stylesheets/page-load.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     
 		<!--TEMPORARY BEBAS BELOW, DELETE FOR PRODUCTION-->
@@ -17,6 +17,7 @@
 		<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 	</head>
     <body>
+    <div id="page-load"></div>
     <div class="body-wrap">
    
     <div>
@@ -79,12 +80,13 @@
     
 <!--end body-wrap-->
 </div>
-<!--    <script src="//code.jquery.com/jquery-latest.js"></script>-->
-<!--    <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.4/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>-->
-   <script src="../js/jquery-1.7.0.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-    
-    
+<script src="../js/jquery-1.7.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    $(window).load(function(){
+    $('#page-load').fadeOut();
+    });
+</script>
 
 </body>
 </html>

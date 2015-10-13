@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
     <link rel="stylesheet" href="stylesheets/icomoon.css" />
+    <link rel="stylesheet" href="stylesheets/page-load.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     
 		<!--TEMPORARY BEBAS BELOW, DELETE FOR PRODUCTION-->
@@ -15,6 +16,7 @@
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	</head>
   <body>  
+  <div id="page-load"></div>
   <div class="body-wrap">
 			<div class="row">
 			<!--menu col-->
@@ -41,6 +43,7 @@
                         </nav>
                         <ul class="social">
                             <li><a href="http://behance.net/cbangs" target="_blank"><span class="icon-behance"></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/charbangs" target="_blank"><span class="icon-linkedin"></span></a></li>
                             <li><a href="http://twitter.com/charbangs" target="_blank"><span class="icon-twitter"></span></a></li>
                             <li><a href="https://instagram.com/cjbangs" target="_blank"><span class="icon-instagram"></span></a></li>
                         </ul>	
@@ -61,6 +64,14 @@
 							<h2 class="serif">SLN</h2>
 							<h4 class="serif">identity + web</h4>
 						</a>
+						<a href="pages/midtown.html" title="Midtown Plaza Mall">
+                            <div class="port-img midtown">
+							    <h3>view project</h3>
+				            </div>
+							<h2 class="serif">Midtown Plaza</h2>
+							<h4 class="serif">layout + production</h4>
+						</a>
+<!--
 						<a href="#" title="The Lodges on Vashon">
 							<div class="port-img lov">
 							    <h3>view project</h3>
@@ -69,6 +80,7 @@
 							<h2 class="serif">Lodges on Vashon</h2>
 							<h4 class="serif">branding + web</h4>
 						</a>
+-->
 						<a href="pages/highmaintenance.html" title="High Maintenance Skincare">
 							<div class="port-img hm">
 							    <h3>view project</h3>
@@ -83,13 +95,6 @@
 							<div class="view-port"><h3>view project</h3></div>
 							<h2 class="serif">Ralph Hewitt</h2>
 							<h4 class="serif">positioning + identity</h4>
-						</a>
-						<a href="pages/midtown.html" title="Midtown Plaza Mall">
-                            <div class="port-img midtown">
-							    <h3>view project</h3>
-				            </div>
-							<h2 class="serif">Midtown Plaza</h2>
-							<h4 class="serif">layout + production</h4>
 						</a>
 						<a href="pages/cam.html">
 							<div class="port-img cam">
@@ -114,5 +119,11 @@
 			
     <!--end body-wrap-->
     </div>
+        <script src="js/jquery-1.7.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            $(window).load(function(){
+            $('#page-load').fadeOut(900);
+            });
+        </script>
 	</body>
 </html>
