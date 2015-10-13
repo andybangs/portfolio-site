@@ -610,7 +610,10 @@ a:hover, a:focus {
             .cam {
                 background: url(../img/cam/cam-cover.jpg) no-repeat center;
             }
-            .hewitt, .lov, .midtown, .hm, .sln, .cam {
+            .see-more {
+                background: url(../img/see-more.jpg) no-repeat center;
+            }
+            .hewitt, .lov, .midtown, .hm, .sln, .cam, .see-more {
                 background-size: cover;
             }
             &:hover .port-img {
