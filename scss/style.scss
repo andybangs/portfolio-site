@@ -607,9 +607,11 @@ a:hover, a:focus {
             }
             .hm {
                 background: url(../img/hm/hm_cover.jpg) no-repeat center;
-                background: url(../img/hm/hm_cover.jpg) no-repeat center;
             }
-            .hewitt, .lov, .midtown, .hm {
+            .sln {
+                background: url(../img/sln/sln-cover.jpg) no-repeat center;
+            }
+            .hewitt, .lov, .midtown, .hm, .sln {
                 background-size: cover;
             }
             &:hover .port-img {
