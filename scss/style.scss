@@ -1,5 +1,5 @@
 @import "settings";
-@import "foundation/components/block-grid";
+@import url(../stylesheets/icomoon.css);
 @import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
 
 * {
@@ -231,7 +231,8 @@ a:hover, a:focus {
 	
 	a:hover {
 		color: $black;
-		background: url(../img/link_bg_small_rect.gif) no-repeat center;
+		background: url(../img/link_bg_small_rect.gif) no-repeat left;
+        background-position-x: -15px;
 	}
 }	
 
@@ -285,167 +286,63 @@ a:hover, a:focus {
     }
 }
 
-// about modal
+// bio modal
 
-.about-modal {
-	display: block;
-	margin-top: 50px;
+.reveal-modal-bg {
+    background: rgba(39, 39, 39, 0.95);
+}
+.reveal-modal {
+    box-shadow: none;
+    padding: 6% 8%;
+    background-color: $white;
+    border-radius: 0;
+    border: 0;
+    .close-reveal-modal {
+        font-family: $monospace;
+        font-weight: normal;
+    }
+    h2 {
+        margin-bottom: 5%;
+    }
+    .columns {
+        padding: 0;
+    }
+    .small-8 {
+        padding-right: 5%;
+    }
+    .small-4 {
+        padding-left: 5%;
+        img {
+            max-width: 90%;
+            border-radius: 100%;
+            margin-bottom: 30px;
+            border: $border;
+        }
+    }
+    .bio-stats {
+        list-style: none;
+        margin-left: 0;
+        border: $border;
+        li {
+            border-bottom: $border;
+            padding: 5px 10px;
+            h5, h6 {
+                margin-bottom: 0;
+            }
+            h6 {
+                margin-top: 0;
+            }
+            span {
+                font-size: .8rem;
+                margin-left: 10px;
+            }
+        }
+        li:last-child {
+            border-bottom: 0;
+        }
+    }
 }
 
-//project grid home page
-
-
-// !!! 3 feature grid !!!
-
-		//.project-container {
-		//	height: 100%;
-		//	display: inline-block;
-		//	float: left;
-		//	width: 60%;
-		//	position: absolute;
-		//  top: 0;
-		//}
-		//
-		//.project-container .row {
-		//	min-height: 50%;
-		//}
-		//
-		//.project-container .row .columns {
-		//	height: 50%;
-		//  position: absolute;
-		//	padding: 20px;
-		//	color: $grey;
-		//}
-		//
-		//.project-container .row .columns h3 {
-		//	font-size: 1.2em;
-		//	color: $grey;
-		//	padding-bottom: 5px;
-		//	border-bottom: 1px solid $grey;
-		//	max-width: 200px;
-		//}
-		//
-		//.feature-1 {
-		//	border-bottom: 5px solid $grey;
-		//	background: url(../img/ian/feature1-3.jpg) no-repeat center;
-		//	background-size: cover;
-		//}
-		//
-		//.feature-2 {
-		//	background: url(../img/mid/feature2_bw.jpg) no-repeat center;
-		//	background-size: cover;
-		//	left: 0;
-		//	border-right: 5px solid $grey;
-		//	border-top: 5px solid $grey;
-		//}
-		//
-		//.feature-3 {
-		//	background: url(../img/pos/feature3.jpg) no-repeat center;
-		//	background-size: cover;
-		//	right: 0;
-		//	border-left: 5px solid $grey;
-		//	border-top: 5px solid $grey;
-		//}
-
-// !!! end 3 feature grid !!!
-
-
-//.project-container {
-//	height: 100%;
-//	display: inline-block;
-////	float: left;
-////	width: 60%;
-//	position: absolute;
-//	top: 0;
-//}
-
-
-.work-grid {
-  @include block-grid(
-    $per-row: 2,
-
-    // This controls how much space is between each item in the block grid.
-    // Use a variable or any pixel or em values.
-//		$spacing: $block-grid-default-spacing,
-
-    // This controls whether or not base styles come through, set to false to leave out.
-    $base-style: true
-  );
-}
-
-.work-grid img {
-	max-width: 250px;
-}
-
-//MAKE THE LI'S LINKS
-.work-grid li {
-	padding-top: 10px;
-	padding-bottom: 80px;
-	margin: 15px;
-}
-
-.work-grid li a {
-	background: #F4F4F5 url(../img/link_bg_square.gif);
-	background-size: contain;
-	display: block;
-	border: $border;
-	box-sizing: border-box;
-	position: relative;
-}
-
-.work-grid li a h5 {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%);
-	-webkit-transform: translate(-50%);
-	font-size: 1.25rem;
-	text-align: center;
-	display: none;
-}
-
-.work-grid li a h5::after {
-	font-family: $webdings;
-	content: '';
-	text-align: center;
-	display:none;
-	font-size: 3.5rem;
-	margin-top: -15px;
-}
-
-.work-grid li {
-	border: $border;
-	background-color: white;
-}
-
-.work-grid li img {
-		transition: all .15s;
-		-webkit-transition: all .15s;
-}
-
-.work-grid li:hover h5, .work-grid li:hover h5::after {
-	display: block;
-}
-
-.work-grid li:hover img {
-	opacity: 0;
-}
-
-@media screen and (min-width:642px) {
-	.work-grid > li {
-		width: auto;
-	}
-}
-
-//@media screen and (min-width:1400px) {
-//	.work-grid {
-//		@include block-grid(
-//			$spacing: 6rem
-//		);	
-//	}
-//}
-
-	
 .project-container {
 	display: inline-block;
 	width: 60%;
@@ -589,6 +486,13 @@ a:hover, a:focus {
                     line-height:1.75rem;
                     transition: all .15s;
                     -webkit-transition: all .15s;
+                    &:after {
+                        content: '\e804';
+                        font-family: 'icomoon';
+                        display: block;
+                        font-size: 1rem;
+                        margin-top: 0;
+                    }
                 }
             }
             

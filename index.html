@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&#91; CHARISSA BANGS DESIGN &#93;</title>
+    <title>CHARISSA BANGS &#91; DESIGN &#93;</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
-    <link rel="stylesheet" href="stylesheets/icomoon.css" />
     <link rel="stylesheet" href="stylesheets/page-load.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     
 		<!--TEMPORARY BEBAS BELOW, DELETE FOR PRODUCTION-->
 		<script src="http://use.edgefonts.net/abril-fatface:n4,i4:all;bebas-neue:n4:all;medula-one:n4:all.js"></script>
@@ -34,6 +33,36 @@
                             <a href="#" data-reveal-id="myModal">
                                 bio
                             </a>
+                            <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                              <h2>Why hello there.</h2>
+                               <div class="row">
+                                   <div class="small-8 columns">
+                                      <p>Thank you for taking the time to visit!</p> 
+                                      <p>I value design as a discipline; it's an exercise of mind, dexterity, and professionalism.</p>                                                               <p>My career first began as an introverted 90’s kid sketching horses &amp; dolphins on my Lisa Frank Trapperkeepers.</p>
+                                      <p>Today I'm a visual designer with 4+ years of experience in both agency &amp; freelance settings. My career thus far has involved print, web &amp; physical space&mdash;&mdash;including brand identity, production design, advertising, environmental graphics, image retouching, UI &amp; development, creative writing and all the in-betweens.</p>
+                                      <p>Intrigued by the peculiar &amp; mysterious.<br>Handcrafted, thoughtful results are what you can expect from me.</p>
+                                      <p>Currently seeking full-time employment in the Seattle area after living abroad for 2 years in beautiful Kyoto, Japan. </p>
+                                    </div>
+                                    <div class="small-4 columns">
+                                       <img src="img/char2.jpg" alt="Charissa Bangs Portrait">
+                                       <ul class="bio-stats">
+                                          <li>
+                                              <h5>Location</h5>
+                                              <h6>Seattle, WA<span class="icon-cloud"></span></h6>
+                                          </li>
+                                          <li>
+                                              <h5>Heroes</h5>
+                                              <h6>Jesus, <a href="http://andybangs.com" target="_blank">Andy Bangs</a></h6>
+                                          </li>
+                                          <li>
+                                              <h5>For Fun</h5>
+                                              <h6>bouldering, playing outside, <a href="http://bangsphoto.tumblr.com" target="_blank">shooting film</a></h6>
+                                          </li>
+                                       </ul>
+                                    </div>
+                              </div>
+                              <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                            </div>
                             <a href="mailto:hello%40charissabangs.com">
                                 contact
                             </a>
@@ -49,12 +78,6 @@
                         </ul>	
                         <div class="quote show-for-large-up">
                             <p>Perfectionist, oddball, mellow&mdash;but not afraid to fight for a good idea.</p>
-                        </div>
-                        <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-                          <h2 id="modalTitle">Awesome. I have it.</h2>
-                          <p class="lead">Your couch.  It is mine.</p>
-                          <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-                          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
                         </div>
 				</div>
 
@@ -77,16 +100,6 @@
 							<h2 class="serif">Midtown Plaza</h2>
 							<h4 class="serif">layout + production</h4>
 						</a>
-<!--
-						<a href="#" title="The Lodges on Vashon">
-							<div class="port-img lov">
-							    <h3>view project</h3>
-							 </div>
-							<div class="view-port"><h3>view project</h3></div>
-							<h2 class="serif">Lodges on Vashon</h2>
-							<h4 class="serif">branding + web</h4>
-						</a>
--->
 						<a href="pages/highmaintenance.html" title="High Maintenance Skincare">
 							<div class="port-img hm">
 							    <h3>view project</h3>
@@ -102,14 +115,14 @@
 							<h2 class="serif">Ralph Hewitt</h2>
 							<h4 class="serif">positioning + identity</h4>
 						</a>
-						<a href="pages/cam.html">
+						<a href="pages/cameco.html" title="Cameco">
 							<div class="port-img cam">
 							    <h3>view project</h3>
 							 </div>
 							<h2 class="serif">Cameco</h2>
 							<h4 class="serif">layout + production</h4>
 						</a>
-						<a href="http://behance.net/cbangs" target="_blank">
+						<a href="http://behance.net/cbangs" target="_blank" title="behance.net/cbangs">
 							<div class="port-img see-more">
 							    <h3>behance.net</h3>
 							 </div>
@@ -123,11 +136,15 @@
 			
     <!--end body-wrap-->
     </div>
-        <script src="js/jquery-1.7.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
+        <script src="js/app.js"></script>
+       
+<!--
         <script>
-            $(window).load(function(){
-            $('#page-load').fadeOut(900);
-            });
+            $(document).foundation();
         </script>
+-->
 	</body>
 </html>

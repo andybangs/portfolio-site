@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../stylesheets/projects.css" />
     <link rel="stylesheet" href="../stylesheets/featherlight.min.css" />
     <link rel="stylesheet" href="../stylesheets/page-load.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
     
 		<!--TEMPORARY BEBAS BELOW, DELETE FOR PRODUCTION-->
 		<script src="http://use.edgefonts.net/abril-fatface:n4,i4:all;bebas-neue:n4:all;medula-one:n4:all.js"></script>
@@ -21,10 +20,10 @@
     <div class="body-wrap">
    
     <div>
-        <a href="../index.html"><img src="../img/cbd_logo.png" alt="Home" class="home-logo"></a>
-    </div>  
+        <a href="../index.html" class="home-link"><img src="../img/cbd_logo.png" alt="Home" class="home-logo"><h6>go home!</h6></a>
+    </div>   
    <nav class="proj-nav">
-       <a href="#" class="prev"><p>prev</p></a>
+       <a href="cameco.html" class="prev"><p>prev</p></a>
        <a href="midtown.html" class="next"><p>next</p></a>
    </nav>
    
@@ -70,19 +69,16 @@
     
     <div>
         <a href="midtown.html" class="big-next-button">
-            <h2>Next up: ???</h2>
+            <h2>Next up: Midtown Plaza</h2>
         </a>
     </div>
     
 <!--end body-wrap-->
 </div>
-<script src="../js/jquery-1.7.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
 <script src="../js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-<script>
-    $(window).load(function(){
-    $('#page-load').fadeOut();
-    });
-</script>
+<script src="../js/app.js"></script>
 
 </body>
 </html>

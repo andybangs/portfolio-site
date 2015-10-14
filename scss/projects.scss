@@ -5,13 +5,25 @@
     padding: 0 !important;
 }
 
-.home-logo {
+.home-link {
+    padding: 5% 50% 5% 0;
+    .home-logo {
     max-width: 50px;
     transition: .2s all;    
     -webkit-transition: .2s all;    
+    }
+    h6 {
+        display: none;
+        margin-left: 10px;
+    }
     &:hover {
-        transform: rotateY(180deg);
-        -webkit-transform: rotateY(180deg);
+        h6 {
+        display: inline-block;
+        }
+        .home-logo {
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+        }
     }
 }
 
