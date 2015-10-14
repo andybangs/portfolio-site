@@ -12,10 +12,13 @@ html, body {
 }
 
 body {
-	font: 16px/20px $monospace normal;
 	color: $black;
 	background-color: $grey;
 	width: 100%;
+}
+
+body, p, h6 {
+    font: 15px/24px $monospace normal !important;
 }
 
 body:before, body:after {
@@ -79,16 +82,6 @@ h1, h2, h3, h4, h5 {
 	font-style: normal;
 	font-weight: 400;
 }
-
-h6 {
-    font-family: $monospace;
-}
-
-//structure
-
-//.off-canvas-wrap {
-//	 border: $border;
-//}
 
 a:link, a:active, a:visited {
 	color: $black;
@@ -231,8 +224,7 @@ a:hover, a:focus {
 	
 	a:hover {
 		color: $black;
-		background: url(../img/link_bg_small_rect.gif) no-repeat left;
-        background-position-x: -15px;
+		background: url(../img/link_bg_small_rect.gif) no-repeat center;
 	}
 }	
 
@@ -306,13 +298,9 @@ a:hover, a:focus {
     }
     .columns {
         padding: 0;
+        text-align: left !important;
     }
-    .small-8 {
-        padding-right: 5%;
-    }
-    .small-4 {
-        padding-left: 5%;
-        img {
+    .large-4 img {
             max-width: 90%;
             border-radius: 100%;
             margin-bottom: 30px;
@@ -331,6 +319,7 @@ a:hover, a:focus {
             }
             h6 {
                 margin-top: 0;
+                line-height: 1.3rem;
             }
             span {
                 font-size: .8rem;
@@ -341,7 +330,6 @@ a:hover, a:focus {
             border-bottom: 0;
         }
     }
-}
 
 .project-container {
 	display: inline-block;
@@ -552,7 +540,7 @@ a:hover, a:focus {
 			margin-top: 30px;
 		}
 		a h4 {
-			font-size: 1rem;
+			font-size: .95rem;
             line-height: 1rem;
 		}
 }
@@ -563,7 +551,7 @@ a:hover, a:focus {
         margin: 0 auto;
         text-align: center;
         padding: 2rem;
-        line-height: 1.65rem;
+        line-height: 2rem;
         
         &:hover {
             background: url(../img/link_bg_square.gif) no-repeat center;
@@ -615,6 +603,20 @@ a:hover, a:focus {
     }
 }
 
+@media screen and (min-width:642px) {
+    .menu a:hover {
+        color: #222;
+        background: url(../img/link_bg_small_rect.gif) no-repeat left;
+        background-position-x: -15px;
+    }
+    .bio-stats-col {
+        padding-right: 5% !important;
+    }
+    .bio-col {
+        padding-left: 5% !important;
+    }
+}
+
 @media screen and (min-width:642px) and (max-width: 1130px) {
     .name {
         margin-top: 20px;
@@ -647,6 +649,12 @@ a:hover, a:focus {
     }
     .social li {
         padding-bottom: 0;
+    }
+    .reveal-modal .bio-stats-col{
+        padding-left: 0;
+        img {
+            max-width: 200px;
+        }
     }
     .port {
         text-align: center;
